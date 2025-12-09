@@ -1,0 +1,75 @@
+# ===========================
+# Python / PyTorch / PyQt 项目推荐 gitignore
+# ===========================
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.dll
+
+# ---- 虚拟环境（重点要忽略！）----
+.venv/
+venv/
+env/
+
+# ---- IDE / 编辑器文件 ----
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ---- 操作系统生成文件 ----
+.DS_Store
+Thumbs.db
+
+# ---- 日志文件 ----
+*.log
+
+# ---- Jupyter Notebook 检查点 ----
+.ipynb_checkpoints/
+
+# ---- PyTorch 模型文件（注意部分保留）----
+# 你可能会保存训练好的模型 model.pth
+# 如果希望上传模型，请注释掉对应行
+# *.pth
+# *.pt
+
+# ---- 数据集（你的猫狗数据太大，不应该放 github）----
+data/
+dataset/
+datasets/
+*.zip
+*.rar
+
+# ---- 临时文件 ----
+*.tmp
+*.temp
+
+# ---- 编译缓存 ----
+build/
+dist/
+*.egg-info/
+
+# ---- Qt 相关缓存 ----
+__pycache__/
+*.qrc.py
+*.qmlc
+*.jsc
+
+# ---- 图片缓存、测试图 ----
+output/
+results/
+uploads/
+
+# ---- Python 覆盖率工具 ----
+.coverage
+htmlcov/
+coverage.xml
+
+# ---- PyInstaller 生成文件（如果你打包的话）----
+*.spec
+dist/
+build/
