@@ -73,3 +73,6 @@ coverage.xml
 *.spec
 dist/
 build/
+
+
+raw_data/
